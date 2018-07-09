@@ -4,55 +4,166 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Los 3 metatags de arriba deben ir al principio del head -->
-    <title>About me</title>
-    <!-- Incluye el css de Bootstrap -->
+    <title>Sobre David</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Incluye nuestro propio CSS -->
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
-    <!-- Este código es necesario si queremos dar soporte a IE8 -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" href="aos/aos.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
 </head>
 <body>
-<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="img/icon.png" alt="">
+<nav data-aos="slide-down" data-aos-duration="800" class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary ">
+    <a class="navbar-brand" href="index.html">
+        <img class="rounded-circle ml-sm-3 ml-md-4 ml-lg-5 img_icono"src="img/icon.png" alt="">
     </a>    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
         <div class="navbar-nav ml-auto text-center align-items-center">
-                <a class="nav item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav item nav-link mr-lg-4" href="#">Mis proyectos</a>
-                <a href="#" class="btn btn-outline-danger mt-2 mt-lg-0 mr-lg-2 w-10">G</a>
+                <a class="nav item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav item nav-link" href="misProyectos.html">Mis proyectos</a>
+                <a class="nav item nav-link mr-lg-4" href="Contacto/contacto.html">Contacto</a>
 
         </div>
     </div>
 </nav>
-<div class="container text-center">
-    <div class=" main row">
-        <div class="text-left col-12 col-md-4 col-lg-6">
-            <h1 class="">About me</h1>
-            <p>Me llamo David, tengo 19 años y vivo en Madrid, España</p>
-        </div>
-        <img class="h-50 img-fluid  col-12 col-md-8 col-lg-6"src="img/main.jpg" alt="">
-        <p class="d-none d-md-inline-flex">Desliza hacia abajo</p>
-    </div>
-    <h2>Conocimientos</h2>
-    <p>Gráfica</p>
-    <h2>Hobbies</h2>
-    <p>Texto</p>
-<div>
+<div class="text-center d-flex flex-column justify-content-center align-items-center">
+    <div class="container main row mt-2 mt-md-3 mt-lg-5 d-flex justify-content-center align-items-stretch">
+        <div data-aos="fade-right" data-aos-duration="1500" class="text-left col-12 col-md-5 col-lg-6">
+            <h1 class="mt-3 mb-md-5 pb-3">Sobre mí</h1>
+            <p class="text-justify">Hola, me llamo David y vivo en Madrid, España.<br>
+            Soy desarrollador front-end y actualmente estoy estudiando Ingeniería Informática.</p>
+            <p class="d-none d-md-block">Tengo conocimientos en desarrollo web de la parte del Front-End y de desarrollo de aplicaciones Android.
+                <br>Me gusta estar actualizado y aprender para ser mejor en el denso mundo del desarrollo web.</p>
 
+        </div>
+        <img height="416" width="297" data-aos="zoom-in-left" data-aos-duration="1500" class=" mb-5 mt-5 ml-md-5 "  data-toggle="tooltip" data-placement="left" title="Este soy yo" src="img/main.jpeg" alt="">
+        <p data-aos="fade-left" data-aos-duration="1500" class="d-md-none">Tengo conocimientos en desarrollo web de la parte del Front-End y de desarrollo de aplicaciones Android.
+            <br>Me gusta estar actualizado y aprender para ser mejor en el denso mundo del desarrollo web.</p>
+
+    </div>
+
+
+
+
+    <div class="main row d-flex w-100 justify-content-center align-items-center" >
+        <hr class="w-100" style="background: darkgray; padding: 0 15%;">
+        <div class="container row ">
+            <div class=" col-lg-4">
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500"><u>Conocimientos</u></h2>
+                <p data-aos="zoom-in-up" data-aos-duration="1500" class="d-none d-lg-block mt-lg-5 pt-lg-5">En lo que más me he enfocado ha sido en aprender Android. Tengo una app en Play Store llamada PrimariApp.</p>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1500" id="grafico" class=" col-lg-8 grafico d-flex justify-content-center" style="width: 100%;"></div>
+        </div>
+    </div>
+
+    <div id="bar-chart" class="main w-100 row d-flex w-100 justify-content-center align-items-center" >
+        <hr class="w-100" style="background: darkgray; padding: 0 15%;">
+        <div class="container row ">
+            <div class="col-12 col-lg-4 order-lg-2">
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500"><u>Hobbies</u></h2>
+                <p data-aos="zoom-in-up" data-aos-duration="1500" class="d-none d-lg-block mt-lg-5 pt-lg-5">No todo es programar ya que también dedico mi tiempo a entrenar o ver series</p>
+
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="col-12 col-lg-8">
+            <ul class="bar-chart mt-5 pt-5 mb-5">
+                <li  id="yellow" class="yellow p-50">
+                    <div class="percent">50<span>%</span></div>
+                    <div class="skill">Series</div>
+                </li>
+                <li id="pink" class="blue p-95">
+                    <div class="percent">95<span>%</span></div>
+                    <div class="skill">Programar</div>
+                </li>
+                <li id="gold" class="red p-75">
+                    <div class="percent">75<span>%</span></div>
+                    <div class="skill">Entrenar</div>
+                </li>
+                <li id="brown" class="brown p-60">
+                    <div class="percent">60<span>%</span></div>
+                    <div class="skill">Leer</div>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row w-100" style="min-height: 50vh">
+        <hr class="w-100" style="background: darkgray; padding: 0 15%;">
+        <div class="container">
+            <p data-aos="fade-up" data-aos-duration="1500" class="col-sm-12 col-md-8 mt-md-auto mb-md-auto">
+                Todavía no se ha acabado, ve a "Mis proyectos" para conocerme mejor.<br>
+                Allí podrás ver a lo que me dedico.
+            </p>
+            <a href="misProyectos.html"  class="mt-3 mt-md-auto mb-md-auto iconoPrimariApp float-md-right"><img data-aos="fade-up" data-aos-duration="1500" class="img-fluid  img-main iconoPrimariApp"  data-toggle="tooltip" data-placement="right" title="Pulsa para ir a Mis Proyectos" src="img/icono_primariApp.png" alt=""></a>
+        </div>
+    </div>
 </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+
+
+<footer class="font-small mt-4 bg-primary">
+    <div class="container">
+        <div class="row text-center d-flex justify-content-center pt-4 pt-lg-5">
+
+            <div class="col-12 mb-3">
+                <h6 class="text-uppercase  font-weight-bold">
+                    <a class="text-white" href="index.html">Inicio</a>
+                </h6>
+            </div>
+            <div class="col-12 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a class="text-white" href="misProyectos.html">Mis proyectos</a>
+                </h6>
+            </div>
+            <div class="col-12 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a class="text-white" href="Contacto/contacto.html">Contacto</a>
+                </h6>
+            </div>
+
+
+        </div>
+        <hr class="rgba-white" style="margin: 0 15%;">
+
+        <div class="pb-3 pb-md-4 pb-lg-5 row d-flex text-center justify-content-center ">
+
+            <div class="col-6 mt-5">
+                <p class="text-white " style="line-height: 1.7rem">Contacta conmigo por las redes sociales</p>
+            </div>
+            <div class="col-6 mt-5">
+                <div class="d-flex justify-content-center">
+                    <a class="gplus-ic ">
+                        <i class="fab fa-google-plus fa-lg white-text m-2 mr-md-4 fa-2x" style="color:white">  </i>
+                    </a>
+                    <a class="li-ic ">
+                        <i class="fab fa-linkedin fa-lg white-text m-2 mr-md-4 fa-2x" style="color:white"> </i>
+                    </a>
+                    <a class="ins-ic ">
+                        <i class="fab fa-instagram fa-lg white-text m-2 mr-md-4 fa-2x" style="color:white"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+<script src="aos/aos.js"></script>
+<script type="text/javascript">
+    AOS.init();
+</script>
 </body>
 </html>
