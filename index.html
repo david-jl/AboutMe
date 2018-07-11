@@ -19,7 +19,7 @@
 
 </head>
 <body>
-<nav data-aos="slide-down" data-aos-duration="800" class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary ">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary ">
     <a class="navbar-brand" href="index.html">
         <img class="rounded-circle ml-sm-3 ml-md-4 ml-lg-5 img_icono"src="img/icon.png" alt="">
     </a>    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,11 +54,11 @@
 
 
 
-    <div class="main row d-flex w-100 justify-content-center align-items-center" >
+    <div class="main row d-flex w-100 justify-content-center align-items-center " >
         <hr class="w-100" style="background: darkgray; padding: 0 15%;">
         <div class="container row ">
             <div class=" col-lg-4">
-                <h2 data-aos="zoom-in-up" data-aos-duration="1500"><u>Conocimientos</u></h2>
+                <h2 class="mt-2 mt-md-3 mt-lg-5" data-aos="zoom-in-up" data-aos-duration="1500"><u>Conocimientos</u></h2>
                 <p data-aos="zoom-in-up" data-aos-duration="1500" class="d-none d-lg-block mt-lg-5 pt-lg-5">En lo que más me he enfocado ha sido en aprender Android. Tengo una app en Play Store llamada PrimariApp.</p>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1500" id="grafico" class=" col-lg-8 grafico d-flex justify-content-center" style="width: 100%;"></div>
@@ -69,7 +69,7 @@
         <hr class="w-100" style="background: darkgray; padding: 0 15%;">
         <div class="container row ">
             <div class="col-12 col-lg-4 order-lg-2">
-                <h2 data-aos="zoom-in-up" data-aos-duration="1500"><u>Hobbies</u></h2>
+                <h2 class="mt-2 mt-md-3 mt-lg-5" data-aos="zoom-in-up" data-aos-duration="1500"><u>Hobbies</u></h2>
                 <p data-aos="zoom-in-up" data-aos-duration="1500" class="d-none d-lg-block mt-lg-5 pt-lg-5">No todo es programar ya que también dedico mi tiempo a entrenar o ver series</p>
 
             </div>
@@ -105,9 +105,8 @@
         </div>
     </div>
 </div>
-
-
-
+<input type="text" class="hide" value="d4vidfun@gmail.com" id="myInput">
+<p class="tooltip"></p>
 <footer class="font-small mt-4 bg-primary">
     <div class="container">
         <div class="row text-center d-flex justify-content-center pt-4 pt-lg-5">
@@ -139,23 +138,28 @@
             </div>
             <div class="col-6 mt-5">
                 <div class="d-flex justify-content-center">
-                    <a class="gplus-ic ">
-                        <i class="fab fa-google-plus fa-lg white-text m-2 mr-md-4 fa-2x" style="color:white">  </i>
-                    </a>
-                    <a class="li-ic ">
-                        <i class="fab fa-linkedin fa-lg white-text m-2 mr-md-4 fa-2x" style="color:white"> </i>
-                    </a>
-                    <a class="ins-ic ">
-                        <i class="fab fa-instagram fa-lg white-text m-2 mr-md-4 fa-2x" style="color:white"> </i>
-                    </a>
+
+                    <a href="#" onclick="return false;"><img class="mr-2" data-toggle="tooltip" data-placement="top" title="Copia mi correo" src="img/mail.png" onclick="myFunction()" alt="" height="40" width="40"></a>
+                    <a href="https://www.linkedin.com/in/david-lamas-jimenez-317246167/" ><img class="mr-2" data-toggle="tooltip" data-placement="top" title="Visita mi Linkedin" src="img/linkedin.png" alt="" height="40" width="40"></a>
+                    <a href="https://github.com/david-jl" ><img class="mr-2" data-toggle="tooltip" data-placement="top" title="Visita mi Github" src="img/github.png" alt="" height="40" width="40"></a>
+                    <a href="https://www.instagram.com/d4vid_jl/?hl=es" ><img class="mr-2" data-toggle="tooltip" data-placement="top" title="Visita mi Instagram" src="img/instagram.png" alt="" height="40" width="40"></a>
+
                 </div>
             </div>
         </div>
     </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script>
+    function myFunction() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("copy");
+    }
+</script>
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
@@ -164,6 +168,20 @@
 <script src="aos/aos.js"></script>
 <script type="text/javascript">
     AOS.init();
+    window.addEventListener('load', AOS.refresh)
+</script>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC_DJ3FQWsm1sb_LLSCs5in3AsviejnbyM",
+        authDomain: "about-me-d5589.firebaseapp.com",
+        databaseURL: "https://about-me-d5589.firebaseio.com",
+        projectId: "about-me-d5589",
+        storageBucket: "about-me-d5589.appspot.com",
+        messagingSenderId: "392898043907"
+    };
+    firebase.initializeApp(config);
 </script>
 </body>
 </html>

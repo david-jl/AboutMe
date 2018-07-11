@@ -1,5 +1,5 @@
 .main{
-    min-height: 90vh;
+    min-height: 50vh;
 }
 .img_icono{
     height: 45px;
@@ -10,7 +10,10 @@
     height: 416px;
     width: 297px;
 }
-
+.hide {
+    position:absolute;
+    left:-9999px
+}
 .tooltip {
     position: relative;
     display: inline-block;
