@@ -1,0 +1,31 @@
+[debug] [2018-07-24T09:41:55.019Z] ----------------------------------------------------------------------
+[debug] [2018-07-24T09:41:55.022Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\d4vid\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-24T09:41:55.022Z] CLI Version:   3.19.3
+[debug] [2018-07-24T09:41:55.022Z] Platform:      win32
+[debug] [2018-07-24T09:41:55.022Z] Node Version:  v8.11.3
+[debug] [2018-07-24T09:41:55.023Z] Time:          Tue Jul 24 2018 11:41:55 GMT+0200 (Hora de verano romance)
+[debug] [2018-07-24T09:41:55.023Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-24T09:41:55.033Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-24T09:41:55.034Z] > authorizing via signed-in user
+[debug] [2018-07-24T09:41:55.037Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/about-me-d5589  
+  
+ Tue Jul 24 2018 11:41:55 GMT+0200 (Hora de verano romance)
+[debug] [2018-07-24T09:42:12.503Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-24T09:42:12.504Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/about-me-d5589/tokens  
+  
+ Tue Jul 24 2018 11:42:12 GMT+0200 (Hora de verano romance)
+[debug] [2018-07-24T09:42:14.749Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-24T09:42:56.195Z] ----------------------------------------------------------------------
+[debug] [2018-07-24T09:42:56.198Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\d4vid\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-07-24T09:42:56.198Z] CLI Version:   3.19.3
+[debug] [2018-07-24T09:42:56.199Z] Platform:      win32
+[debug] [2018-07-24T09:42:56.199Z] Node Version:  v8.11.3
+[debug] [2018-07-24T09:42:56.199Z] Time:          Tue Jul 24 2018 11:42:56 GMT+0200 (Hora de verano romance)
+[debug] [2018-07-24T09:42:56.199Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-24T09:42:56.213Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-24T09:42:56.214Z] > authorizing via signed-in user
+[debug] [2018-07-24T09:42:56.217Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/about-me-d5589  
+  
+ Tue Jul 24 2018 11:42:56 GMT+0200 (Hora de verano romance)
