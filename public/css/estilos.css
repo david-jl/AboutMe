@@ -148,6 +148,11 @@
 
 @media ( max-width: 960px ) {
 
+    .grafico{
+        height: 320px;
+        width: 320px;
+    }
+
     .percent {
         font-size: 40px;
     }
@@ -220,9 +225,9 @@
 }
 
 @media ( max-width: 480px ) {
-    #grafico{
-        height: 320px;
-        width: 320px;
+    .grafico{
+        height: 70%;
+        width: 70%;
     }
     .percent {
         font-size: 24px;
@@ -244,6 +249,7 @@
 }
 
 @media ( max-width: 420px ) {
+
 
     .percent {
         font-size: 24px;
@@ -267,10 +273,7 @@
 
 
 @media ( max-width: 320px ) {
-    #grafico{
-        height: 300px;
-        width: 300px;
-    }
+
     .percent {
         font-size: 20px;
     }
@@ -320,6 +323,9 @@
 }
 .bar-chart .p-50 {
     height: 50%;
+}
+.bar-chart .p-40 {
+    height: 40%;
 }
 .bar-chart .p-60 {
     height: 60%;
