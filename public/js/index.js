@@ -1,26 +1,58 @@
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-        ['Conocimientos', 'Conocimientos'],
-        ['JavaScript',  20],
-        ['Java', 10],
-        ['HTML/CSS',      28],
-        ['Android',     42]
-    ]);
-    var options = {
-        legend: 'none',
-        pieSliceText: 'label',
-        tooltip: { trigger: 'focus', text: 'none'},
-        slices: {
-            0: { color: '#ba9932' },
-            1: { color: 'red' },
-            2: { color: 'green' },
-            3: { color: '#007bff' }
-        },
-        fontSize: 20,
-        bold: true
-    };
-    var grafico = new google.visualization.PieChart(document.getElementById('grafico'));
-    grafico.draw(data, options);
+// Initialize Firebase (ADD YOUR OWN DATA)
+var config = {
+    apiKey: "AIzaSyAsNZlUEfQ9Nq8GAMGrfshHUCE_FTqC-6E",
+    authDomain: "davidjl-aboutme.firebaseapp.com",
+    databaseURL: "https://davidjl-aboutme.firebaseio.com",
+    projectId: "davidjl-aboutme",
+    storageBucket: "davidjl-aboutme.appspot.com",
+    messagingSenderId: "734513722226"
+};
+firebase.initializeApp(config);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+    e.preventDefault();
+    var nombre = getInputVal('nombre');
+    var email = getInputVal('email');
+    var asunto = getInputVal('asunto');
+    var mensaje = getInputVal('mensaje');
+
+    saveMessage(nombre, email, asunto, mensaje);
+
+    document.getElementById('contactForm').reset();
+    document.querySelector('.alerta').style.display = 'block';
+    document.querySelector('.alerta').style.animation = '1s alerta forwards';
+
+    setTimeout(function(){
+        document.querySelector('.alerta').style.animation = '1s alerta_quitar forwards';
+    },5000);
+    setTimeout(function(){
+        document.querySelector('.alerta').style.display = 'none';
+        document.querySelector('.footer_animation').style.animation = '1s subir_footer forwards';
+    },6000);
+
+    // Clear form
+
+}
+
+// Function to get get form values
+function getInputVal(id){
+    return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(nombre, email, asunto, mensaje){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        nombre: nombre,
+        email:email,
+        asunto:asunto,
+        mensaje:mensaje
+    });
 }

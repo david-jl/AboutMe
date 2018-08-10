@@ -34,7 +34,7 @@
 
 <div class="container mt-3 mt-md-4 mt-lg-5">
     <div class="main">
-        <form  method="get" id="formulario_contacto">
+        <form id="contactForm">
             <div class="form-group row">
                 <label for="nombre" class="col-sm-12 col-md-2 col-form-label">Nombre</label>
                 <div class="col-sm-12 col-md-10">
@@ -61,13 +61,14 @@
                 <textarea class="form-control" id="mensaje" name="mensaje" rows="10"></textarea>
             </div>
             <div class="cenX down">
-                <button id="enviar" class="btn btn-primary btn-lg" type="button">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-lg mb-4">Enviar</button>
             </div>
+            <p class="alerta">¡Mensaje enviado! Le contestaré lo antes posible.</p>
+
         </form>
     </div>
 </div>
-<input type="text" class="hide" value="d4vidfun@gmail.com" id="myInput">
-<footer class="font-small mt-4 bg-primary">
+<footer class="font-small mt-4 bg-primary footer_animation">
     <div class="container">
         <div class="row text-center d-flex justify-content-center pt-3 pt-md-4 pt-lg-5">
 
@@ -106,6 +107,8 @@
         </div>
     </div>
 </footer>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="../js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

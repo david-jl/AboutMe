@@ -339,6 +339,46 @@
     height: 95%;
 }
 
+.alerta{
+    width: 100%;
+    border-radius: 4px;
+    padding: 1em;
+    background-color: #6eee6d;
+    display: none;
+    position: relative;
+}
+@keyframes alerta {
+    0%{
+        transform: translateY(2em);
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes alerta_quitar {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes subir_footer {
+    0%{
+        transform: translateY(2em);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .bar-chart .blue {
     border-color: #4FC3F7;
     background-color: #B3E5FC;
