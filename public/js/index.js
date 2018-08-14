@@ -1,4 +1,3 @@
-// Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
     apiKey: "AIzaSyAsNZlUEfQ9Nq8GAMGrfshHUCE_FTqC-6E",
     authDomain: "davidjl-aboutme.firebaseapp.com",
