@@ -39,7 +39,6 @@ function submitForm(e){
     // Clear form
 
 }
-
 // Function to get get form values
 function getInputVal(id){
     return document.getElementById(id).value;
@@ -55,3 +54,5 @@ function saveMessage(nombre, email, asunto, mensaje){
         mensaje:mensaje
     });
 }
+
+//SG.cuSwEHP_Q3meJLTp3zStqg.4NhavSxFgNvmbCzRxuCWs9ueKAE0cZmh48BQm5GzcskSG.cuSwEHP_Q3meJLTp3zStqg.4NhavSxFgNvmbCzRxuCWs9ueKAE0cZmh48BQm5Gzcsk
